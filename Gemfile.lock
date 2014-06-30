@@ -67,6 +67,16 @@ GIT
       spree_core (~> 2.2.0)
 
 GIT
+  remote: git://github.com/spree/spree_editor.git
+  revision: ef31bd5f5d5094add0a13d359aff6a0b4bff021f
+  branch: 2-2-stable
+  specs:
+    spree_editor (2.2.0)
+      ckeditor (= 4.0.6)
+      spree_backend (~> 2.2.0)
+      tinymce-rails (~> 3.5.8.3)
+
+GIT
   remote: git://github.com/spree/spree_i18n.git
   revision: 76e5157267eaba3f8030252df5b06e467ea5a7ec
   branch: 2-2-stable
@@ -129,6 +139,9 @@ GEM
     cancan (1.6.10)
     canonical-rails (0.0.7)
       rails (>= 3.1, < 5.0)
+    ckeditor (4.0.6)
+      mime-types
+      orm_adapter
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -263,6 +276,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    tinymce-rails (3.5.8.3)
+      railties (>= 3.1.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -295,6 +310,7 @@ DEPENDENCIES
   sdoc
   spree!
   spree_auth_devise!
+  spree_editor!
   spree_i18n!
   turbolinks
   uglifier (>= 1.3.0)

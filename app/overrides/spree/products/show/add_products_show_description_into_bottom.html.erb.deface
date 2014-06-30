@@ -1,6 +1,6 @@
 <!-- insert_after '[data-hook="product_right_part"]' -->
 <div class="columns" data-hook="product_bottom_part">
-	<div item="description" data-hook="description">
+	<div itemprop="description" data-hook="description">
 		<%= product_description(@product) rescue Spree.t(:product_has_no_description) %>
 	</div>
 </div>
